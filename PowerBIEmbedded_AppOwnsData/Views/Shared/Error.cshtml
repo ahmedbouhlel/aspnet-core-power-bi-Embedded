@@ -1,0 +1,27 @@
+﻿@model PowerBIEmbedded_AppOwnsData.Models.EmbedConfig
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <hgroup>
+        <h1>Error.</h1>
+        <h2>An error occurred while processing your request.</h2>
+    </hgroup>
+    <div>
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div id="errorWrapper">
+                <pre>
+            @Model.ErrorMessage
+        </pre>
+            </div>
+            return;
+        }
+    </div>
+
+</body>
+</html>

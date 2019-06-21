@@ -1,0 +1,10 @@
+﻿
+
+body {
+    overflow: hidden;
+}
+
+#reportContainer {
+    height: calc(100vh);
+    width: calc(100%);
+}
